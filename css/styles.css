@@ -1,0 +1,35 @@
+
+/*@keyframes fade {
+  0% { opacity: 0 }
+  10% { opacity: 1 }
+  30% { opacity: 1 }
+  40% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+.animate-fade1 {
+  animation: fade 15s infinite;
+}
+.animate-fade2 {
+  animation: fade 15s infinite;
+  animation-delay: 5s;
+}
+.animate-fade3 {
+  animation: fade 15s infinite;
+  animation-delay: 10s;
+}*/
+
+@keyframes fade {
+  0%, 33% { opacity: 1; }
+  34%, 100% { opacity: 0; }
+}
+
+.animate-fade1 {
+  animation: fade 15s infinite;
+}
+.animate-fade2 {
+  animation: fade 15s infinite 5s;
+}
+.animate-fade3 {
+  animation: fade 15s infinite 10s;
+}
